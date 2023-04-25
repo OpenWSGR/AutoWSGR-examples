@@ -5,22 +5,22 @@ emulator:
   config_file: ""
 
 LOG_PATH: "log"
-DELAY: 1.5
+DELAY: 2
 
 account:
 password:
 
 # ========== Logger设置 ==========
-DEBUG: False
-SHOW_MAP_NODE: False
-SHOW_ANDROID_INPUT: False
-SHOW_ENEMY_RULES: False
-SHOW_FIGHT_STAGE: False
-SHOW_CHAPTER_INFO: False
-SHOW_MATCH_FIGHT_STAGE: False
-SHOW_DECISIVE_BATTLE_INFO: False
-SHOW_OCR_INFO: False
-log_level: INFO # 调试模式 log_level 应该设置为 DEBUG
+DEBUG: True
+SHOW_MAP_NODE: True
+SHOW_ANDROID_INPUT: True
+SHOW_ENEMY_RULES: True
+SHOW_FIGHT_STAGE: True
+SHOW_CHAPTER_INFO: True
+SHOW_MATCH_FIGHT_STAGE: True
+SHOW_DECISIVE_BATTLE_INFO: True
+SHOW_OCR_INFO: True
+log_level: DEBUG
 
 # ========== 日常挂机策略设置 ==========
 daily_automation:
