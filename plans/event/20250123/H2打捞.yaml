@@ -16,7 +16,7 @@ node_args:
   C:
     SL_when_spot_enemy_fails: True
     enemy_formation_rules:
-      - [单纵, retreat]
+      - [单横, retreat]
   M:
     formation: 4
     night: True
