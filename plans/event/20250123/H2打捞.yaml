@@ -1,7 +1,7 @@
 # 5鱼捞中路
 chapter: H
 map: 2
-selected_nodes: [B,G,H,M]
+selected_nodes: [B,G,H,M,C,E]
 repair_mode: 1
 node_defaults:
   formation: 2
@@ -13,6 +13,10 @@ node_args:
     SL_when_spot_enemy_fails: True
     enemy_formation_rules:
       - [单横, retreat]
+  C:
+    SL_when_spot_enemy_fails: True
+    enemy_formation_rules:
+      - [单纵, retreat]
   M:
     formation: 4
     night: True
