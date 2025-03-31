@@ -20,7 +20,7 @@ node_args:
     proceed: True
   J:
     enemy_rules:
-      - ["SAP<=1", "retreat"] # 不存在补给舰时撤退
+      - ["SAP<1", "retreat"] # 不存在补给舰时撤退
     SL_when_spot_enemy_fails: True
     formation: 4
     night: False
