@@ -18,7 +18,7 @@ node_args:
     proceed: True # 结束后是否继续
   E:
     enemy_rules:
-    - [CL = 0, retreat]
+    - [CL == 0, retreat]
     SL_when_spot_enemy_fails: True # 索敌失败时是否SL
     formation: 4 # 阵型选择，1-5
     night: False # 是否夜战
