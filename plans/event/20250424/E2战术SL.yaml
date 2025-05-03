@@ -4,4 +4,4 @@ node_args:
   formation: 4  # 梯形
   night: False  # 不进夜战
   SL_when_enter_fight: True
-repair_mode: 1  # 中破修理
+repair_mode: 2  # 大破修理
