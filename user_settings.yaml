@@ -1,10 +1,5 @@
 # 全部可设置选项参见 autowsgr/user_config.py
 # 所有项目如果不设置将使用默认值
-# 注意⚠️ mac 端目前仅支持 MuMu 12 pro
-
-# MuMu 请参考下方说明, 在全局设置中添加一行 emulator_name
-# emulator_type: MuMu
-# emulator_name: 127.0.0.1:your_port
 
 # ========= 全局设置 =========
 
@@ -38,8 +33,8 @@ bathroom_count: 2
 
 # ========= 模拟器类型 =========
 emulator_type: 雷电
-# emulator_type: MuMu
-# emulator_name: 127.0.0.1:your_port
+# 如果您有多开等需要指定模拟器的需求，请使用emulator_name手动指定
+# emulator_name: your_ip:your_port
 
 # ========= 日常挂机策略设置 =========
 # 若需要启用/禁用某项功能, 请手动修改对应的 True/False, 或者添加 # 注释掉使用默认值
