@@ -1,12 +1,16 @@
-from autowsgr.fight.event.event_2025_0424 import EventFightPlan2025_0424
+from autowsgr.fight.event.event_2025_0710 import EventFightPlan20250710
 from autowsgr.scripts.main import start_script
 
-timer = start_script()
 
-# E1 炸鱼, 替换成你自己电脑上的绝对路径
-e1_plan = EventFightPlan2025_0424(timer, r'C:\Users\huany\Desktop\Projects\Auto-WSGR-dev\AutoWSGR\examples\plans\event\20250424\E1炸鱼.yaml')
-e1_plan.run_for_times(200)
+timer = start_script("./user_settings.yaml")
+# set_support(timer,True) # 如果要在战斗前开启战役支援请取消这一行的注释
+plan = EventFightPlan20250710(
+    timer,
+    plan_path="E9AC夜战",
+    fleet_id=2,
+)  # 修改E9AC夜战为相对于的plan，详细的plan名可在data/plans/event/20250710查看，fleet_id为出击编队
 
-# E2 战术
-# e2_plan = EventFightPlan2025_0424(timer, r'C:\Users\huany\Desktop\Projects\Auto-WSGR-dev\AutoWSGR\examples\plans\event\20250424\E2战术.yaml') 
-# e2_plan.run_for_times(10)
+
+plan.run_for_times(
+    500,
+)  # 第一个参数是战斗次数,还有个可选参数为检查远征时间，默认为1800S
