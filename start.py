@@ -779,6 +779,10 @@ class MainWindow(QMainWindow):
         if self.daily_task_process.state() == QProcess.ProcessState.Running:
             self.daily_task_process.kill()
         else:
+            if self.db_process.state() == QProcess.ProcessState.Running or \
+               self.event_process.state() == QProcess.ProcessState.Running:
+                QMessageBox.warning(self, "操作失败", "已有其他任务正在运行，请先中止。")
+                return
             script_path = "auto_daily.py"
             if not os.path.exists(script_path):
                 QMessageBox.warning(self, "文件未找到", f"无法找到脚本: {script_path}")
@@ -865,6 +869,10 @@ class MainWindow(QMainWindow):
         if self.db_process.state() == QProcess.ProcessState.Running:
             self.db_process.kill()
         else:
+            if self.daily_task_process.state() == QProcess.ProcessState.Running or \
+               self.event_process.state() == QProcess.ProcessState.Running:
+                QMessageBox.warning(self, "操作失败", "已有其他任务正在运行，请先中止。")
+                return
             script_path = "decisive_battle_callable.py"
             if not os.path.exists(script_path):
                 QMessageBox.warning(self, "文件未找到", f"无法找到脚本: {script_path}")
@@ -957,6 +965,10 @@ class MainWindow(QMainWindow):
         if self.event_process.state() == QProcess.ProcessState.Running:
             self.event_process.kill()
         else:
+            if self.daily_task_process.state() == QProcess.ProcessState.Running or \
+               self.db_process.state() == QProcess.ProcessState.Running:
+                QMessageBox.warning(self, "操作失败", "已有其他任务正在运行，请先中止。")
+                return
             script_path = "event_callable.py"
             if not os.path.exists(script_path):
                 QMessageBox.warning(self, "文件未找到", f"无法找到脚本: {script_path}")
