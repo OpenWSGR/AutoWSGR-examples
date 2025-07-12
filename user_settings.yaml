@@ -84,6 +84,8 @@ decisive_battle:
   # 决战凑数船提示: 狮、虎等字难以识别, 建议更换其他船只！
   # 决战章节,请保证为 [1, 6] 中的整数. Defaults to 6.
   chapter: 6
+  # 出击次数
+  sortie_times: 1
   # 一级舰队
   level1: ["鲃鱼", "U-1206", "射水鱼", "U-96", "U-1405", "U-47"]
   # 二级舰队
@@ -96,3 +98,14 @@ decisive_battle:
   full_destroy: True
   # 充分利用技能, 开启时要求地图1必须为Lv1+Lv2中的船; 其余地图至少一半的船为Lv1中的船
   useful_skill: True
+
+# ========= 活动设置 =========
+event_automation:
+  # 选择活动
+  event_folder: '20250710'
+  # 选择任务
+  plan_name: E9AC夜战
+  # 选择舰队
+  fleet_id: 1
+  #出击次数
+  battle_count: 500
