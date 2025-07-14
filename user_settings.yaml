@@ -96,3 +96,5 @@ decisive_battle:
   full_destroy: True
   # 充分利用技能, 开启时要求地图1必须为Lv1+Lv2中的船; 其余地图至少一半的船为Lv1中的船
   useful_skill: True
+  # 严格利用技能, 开启时要求地图1技能不能获取+1的船; useful_skill为True时本设置才生效
+  useful_skill_strict: True
